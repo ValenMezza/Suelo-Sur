@@ -66,6 +66,7 @@ header nav{
 }
 header div{
     display: flex;
+    flex-wrap:wrap ;
 }
 .nav-header a{
     display: flex;
@@ -611,19 +612,20 @@ footer p{
     body{
         width: 100vw;
         height: 100vh;
-        font-size: 20px;
+        font-size: 10px;
     }
     .icono-suelo{
         width: 20vw;
     }
     header{
+        width: 100vw;
         background: rgb(255,255,255);
         background: linear-gradient(0deg, rgba(255,255,255,1) 42%, rgb(226, 178, 6) 100%);
     }
     .header nav{
+        width: 100vw;
         display: grid;
         grid-template-columns: repeat(4, 25%);
-        grid-column-gap: 5px;
         grid-template-rows: repeat(1,50px);
         background-color: rgb(226, 178, 6);
         border: solid rgba(2, 2, 2, 0.9);
@@ -634,7 +636,7 @@ footer p{
     }
     .nav-header__nosotros{
         display: flex;
-        font-size: small;
+        font-size: 0.5rem;
         font-weight: bolder;
         align-items: center;
         grid-area: nav-header__nosotros;
@@ -657,21 +659,24 @@ footer p{
         align-items: center;
         grid-area: nav-header__cuenta;
     }
+
     header div{
         display: flex;
+        flex-wrap:wrap ;
     }
     .nav-header a{
         display: flex;
     }
     .nav-header button{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .grid-item div{
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
     .grid-item div img{
-        width: 220px;
+        width: 30vw;
+        height: 20vh;
     }
     .grid-container{
         display: grid;
@@ -703,7 +708,6 @@ footer p{
         padding-bottom: 25px;
         margin-top: 1%;
         justify-content: space-around;
-        padding: 1%;
         text-align: center;
         font-style: normal;
         font-size: 2rem;
@@ -721,7 +725,7 @@ footer p{
     }
     aside li{
         display: block;
-        margin: 5px;
+        margin: 2%;
         text-align: start;
         padding-left: 10px;
         justify-items: start;
@@ -730,16 +734,18 @@ footer p{
     aside ul{
         font-size: 0.8rem;
         text-align: start;
-        margin-left: 1px;
+        margin-left: 1vw;
     }
-    aside p{
-        padding-top: 20px;
+    aside h5{
+        padding-top: 2vh;
+        font-size: 1rem;
+
     }
     .css-button-3d--sky {
         min-width: 130px;
         height: 40px;
+        font-size: 0.8rem;
         color: #fff;
-        padding: 15px 20px;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -760,11 +766,10 @@ footer p{
         top: 5px;
     }
     aside .css-button-3d--sky {
-        min-width: 130px;
-        height: 40px;
+        min-width: 6vw;
         color: #fff;
-        padding: 10px 5px;
         font-weight: bold;
+        font-size: 0.8rem;
         cursor: pointer;
         transition: all 0.3s ease;
         position: relative;
@@ -774,8 +779,6 @@ footer p{
         border: none;
         background: #3a86ff;
         box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
-
-
     }
     footer {
         display: block;
@@ -787,6 +790,7 @@ footer p{
     }
     footer h2{
         display: block;
+        font-size: 1.5rem ;
         color: rgb(255, 255, 255);
         border: solid black 2px;
         background-color:  rgba(35, 129, 206, 0.9);
@@ -794,6 +798,7 @@ footer p{
     }
     footer h3{
         margin-bottom: 1vh;
+        font-size: 1rem;
     }
     footer p{
         text-align: center;
@@ -801,13 +806,14 @@ footer p{
     .flex-container{
         display: flex;
         width: 100vw;
-        padding-left: 1%;
+        padding-left: 1vw;
         
     }
     .flex-item__web{
         display: flex;
         flex-direction: column;
         width: 30vw;
+        font-size: 0.8rem;
     }
     .flex-item__contact{
         display: flex;
@@ -817,9 +823,11 @@ footer p{
         margin-right: 3vw;
         text-align: end;
         width: 30vw;
+        font-size: 0.8rem;
     }
     .flex-item__redes{
         width: fit-content;
+        font-size: 0.8rem;
     }
     footer .icono-suelo{
         width: 20vw;
@@ -828,6 +836,7 @@ footer p{
     footer p{
         text-align: center;
         padding-bottom: 1vh;
+        font-size:0.8rem ;
     }
 }
 
@@ -841,30 +850,36 @@ footer p{
 
 
 
-@media screen and (max-width: 425px){
-    *{
-        padding: 0;
-        margin: 0;
+@media screen and (max-width: 600px){ 
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        font-size: 10px;
+    }
+    .icono-suelo{
+        width: 20vw;
+    }
+    header{
+        width: 100vw;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 42%, rgb(226, 178, 6) 100%);
     }
     .header nav{
-        width: 425px;
+        width: 100vw;
         display: grid;
         grid-template-columns: repeat(4, 25%);
-        grid-column-gap: 5px;
         grid-template-rows: repeat(1,50px);
         background-color: rgb(226, 178, 6);
         border: solid rgba(2, 2, 2, 0.9);
         justify-content: center;
-        padding: 10px;
+        padding: 2vh;
+        padding: 2vw;
         grid-template-areas: "nav-header__nosotros nav-header__ubicacion nav-header__contacto nav-header__cuenta";
-    }
-    header a{
-        height: 320px;
-        width: 320px;
     }
     .nav-header__nosotros{
         display: flex;
-        font-size: small;
+        font-size: 0.5rem;
         font-weight: bolder;
         align-items: center;
         grid-area: nav-header__nosotros;
@@ -887,30 +902,24 @@ footer p{
         align-items: center;
         grid-area: nav-header__cuenta;
     }
+
     header div{
         display: flex;
+        flex-wrap:wrap ;
     }
     .nav-header a{
         display: flex;
     }
-    .nav-header__ubicacion button{
-        font-size: small;
-    }
-    .nav-header__contacto button{
-        font-size: small;
-    }
-    .nav-header__cuenta button{
-        font-size: small;
-    }
-    .nav-header__nosotros button{
-        font-size: small;
+    .nav-header button{
+        font-size: 0.6rem;
     }
     .grid-item div{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     .grid-item div img{
-        width: 220px;
+        width: 30vw;
+        height: 20vh;
     }
     .grid-container{
         display: grid;
@@ -924,6 +933,10 @@ footer p{
     .grid-item{
         grid-area: grid-item;
     }
+    .grid-item h4{
+
+        font-size: 0.8rem;
+    }
     .grid-item__aside{
         display: flexbox;
         grid-area: grid-item__aside;
@@ -936,49 +949,49 @@ footer p{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: 25px;
+        padding-bottom: 2vh;
         margin-top: 1%;
         justify-content: space-around;
-        padding: 20px;
         text-align: center;
         font-style: normal;
-        font-size: x-large;
+        font-size: 1rem;
     }
     main img{
-        border: 4px solid black;
+        border: 2px solid black;
+    }
+    main h4{
+        display: block;
+        flex-wrap: wrap;
+        border:rgb(0, 0, 0) solid 2px;
     }
     aside h3{
-        font-size: large;
+        font-size: 1rem;
         font-weight: bolder;
-        margin: 5px;
+        padding: 1vw;
     }
     aside li{
         display: block;
-        margin: 5px;
+        margin: 2%;
         text-align: start;
         padding-left: 10px;
         justify-items: start;
+        font-size: 0.5rem ;
     }
     aside ul{
+        font-size: 0.7rem;
         text-align: start;
-        margin-left: 1px;
+        margin-left: 1vw;
     }
-    aside H5{
-        padding-top: 20px;
-    }
-    
-    aside button{
-        font-size: x-small;
-        margin-top: 20px;
-    }
-    
+    aside h5{
+        padding-top: 2vh;
+        font-size: 0.7rem;
 
-
+    }
     .css-button-3d--sky {
         min-width: 130px;
         height: 40px;
+        font-size: 0.6rem;
         color: #fff;
-        padding: 15px 20px;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -991,7 +1004,7 @@ footer p{
         box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
     }
     .css-button-3d--sky:hover {
-        box-shadow: 0 3px  black;
+        box-shadow: 0 3px  rgba(0, 0, 0, 0.9);
         top: 1px;
     }
     .css-button-3d--sky:active {
@@ -999,11 +1012,10 @@ footer p{
         top: 5px;
     }
     aside .css-button-3d--sky {
-        min-width: 130px;
-        height: 40px;
+        min-width: 6vw;
         color: #fff;
-        padding: 5px 5px;
         font-weight: bold;
+        font-size: 0.6rem;
         cursor: pointer;
         transition: all 0.3s ease;
         position: relative;
@@ -1014,6 +1026,64 @@ footer p{
         background: #3a86ff;
         box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
     }
+    footer {
+        display: block;
+        color: rgb(0, 0, 0);
+        background-color:rgb(226, 178, 6);
+        margin-top: 5vh;
+        font-size: 1rem;
+        width: 100vw;
+    }
+    footer h2{
+        display: block;
+        font-size: 1rem ;
+        color: rgb(255, 255, 255);
+        border: solid black 2px;
+        background-color:  rgba(35, 129, 206, 0.9);
+        text-align: center;
+    }
+    footer h3{
+        margin-bottom: 1vh;
+        font-size: 0.8rem;
+    }
+    footer p{
+        text-align: center;
+    }
+    .flex-container{
+        display: flex;
+        width: 100vw;
+        padding-left: 1vw;
+        
+    }
+    .flex-item__web{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        font-size: 0.6rem;
+    }
+    .flex-item__contact{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        margin-top: 1vh;
+        margin-right: 3vw;
+        text-align: end;
+        width: 30vw;
+        font-size: 0.6rem;
+    }
+    .flex-item__redes{
+        width: fit-content;
+        font-size: 0.6rem;
+    }
+    footer .icono-suelo{
+        width: 20vw;
+        height: 20vh;
+    }
+    footer p{
+        text-align: center;
+        padding-bottom: 1vh;
+        font-size:0.8rem ;
+    }
 }
 
 /* VISTA 375*/
@@ -1022,22 +1092,21 @@ footer p{
 
 @media screen and (max-width: 375px){
     header{
-        width: 375px;
+        width: 100vw;
     }
     .header nav{
+        width: 100vw;
         display: grid;
-        width: 375px;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(1,50px);
         background-color: rgb(226, 178, 6);
         border: solid rgba(2, 2, 2, 0.9);
         justify-content: center;
-        padding: 10px;
         grid-template-areas: "nav-header__nosotros nav-header__ubicacion nav-header__contacto nav-header__cuenta";
     }
     #logo-suelo img{
-        width: 120px;
-        height: 120px;
+        width: 20vw;
+        height: 10vh;
     }
     .nav-header__nosotros{
         display: flex;
@@ -1071,24 +1140,24 @@ footer p{
         display: flex;
     }
     .nav-header__ubicacion button{
-        font-size: xx-small;
+        font-size: 0.5rem;
     }
     .nav-header__contacto button{
-        font-size: xx-small;
+        font-size: 0.5rem;
     }
     .nav-header__cuenta button{
-        font-size: x-small;
+        font-size: 0.5rem;
     }
     .nav-header__nosotros button{
-        font-size: xx-small;
+        font-size: 0.5rem;
     }
     .grid-item div{
         padding-top: 20px;
         padding-bottom: 20px;
     }
     .grid-item div img{
-        width: 120px;
-        height: 120px;
+        width: 35vw;
+        height: 20vh;
     }
     .grid-container{
         display: grid;
@@ -1237,25 +1306,36 @@ aside .css-button-3d--sky {
 
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px){ 
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        font-size: 10px;
+    }
+    .icono-suelo{
+        width: 20vw;
+    }
+    header{
+        width: 100vw;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 42%, rgb(226, 178, 6) 100%);
+    }
     .header nav{
+        width: 100vw;
         display: grid;
-        width: 320px;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(1,50px);
         background-color: rgb(226, 178, 6);
         border: solid rgba(2, 2, 2, 0.9);
         justify-content: center;
-        padding: 10px;
+        padding: 2vh;
+        padding: 2vw;
         grid-template-areas: "nav-header__nosotros nav-header__ubicacion nav-header__contacto nav-header__cuenta";
-    }
-    header div a img{
-        width: 120px;
-        height: 120px;
     }
     .nav-header__nosotros{
         display: flex;
-        font-size: small;
+        font-size: 0.5rem;
         font-weight: bolder;
         align-items: center;
         grid-area: nav-header__nosotros;
@@ -1278,31 +1358,24 @@ aside .css-button-3d--sky {
         align-items: center;
         grid-area: nav-header__cuenta;
     }
+
     header div{
         display: flex;
+        flex-wrap:wrap ;
     }
     .nav-header a{
         display: flex;
     }
-    .nav-header__ubicacion button{
-        font-size: small;
-    }
-    .nav-header__contacto button{
-        font-size: small;
-    }
-    .nav-header__cuenta button{
-        font-size: small;
-    }
-    .nav-header__nosotros button{
-        font-size: small;
+    .nav-header button{
+        font-size: 0.8rem;
     }
     .grid-item div{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     .grid-item div img{
-        width: 120px;
-        height: 120px;
+        width: 30vw;
+        height: 20vh;
     }
     .grid-container{
         display: grid;
@@ -1315,6 +1388,9 @@ aside .css-button-3d--sky {
     }
     .grid-item{
         grid-area: grid-item;
+    }
+    .grid-item h4{
+        font-size: 1rem;
     }
     .grid-item__aside{
         display: flexbox;
@@ -1331,99 +1407,134 @@ aside .css-button-3d--sky {
         padding-bottom: 25px;
         margin-top: 1%;
         justify-content: space-around;
-        padding: 20px;
         text-align: center;
         font-style: normal;
-        font-size: x-large;
+        font-size: 2rem;
     }
     main img{
-        border: 4px solid black;
+        border: 2px solid black;
+    }
+    main h4{
+        border:rgb(0, 0, 0) solid 2px;
     }
     aside h3{
-        font-size: small;
+        font-size: 1rem;
         font-weight: bolder;
-        margin: 5px;
+        padding: 1vw;
     }
     aside li{
         display: block;
-        font-size: small;
-        margin: 5px;
+        margin: 2%;
         text-align: start;
         padding-left: 10px;
         justify-items: start;
+        font-size: 0.8rem ;
     }
     aside ul{
+        font-size: 0.8rem;
         text-align: start;
-        margin-left: 1px;
+        margin-left: 1vw;
     }
-    aside p{
-        padding-top: 20px;
-    }
-    
-    aside button{
-        font-size: x-small;
-        margin-top: 20px;
+    aside h5{
+        padding-top: 2vh;
+        font-size: 1rem;
+
     }
     .css-button-3d--sky {
-    min-width: 80px;
-    height: 20px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: #3a86ff;
-    box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
-}
-.css-button-3d--sky:hover {
-    box-shadow: 0 3px  rgba(35, 129, 206, 0.9);
-    top: 1px;
-}
-.css-button-3d--sky:active {
-    box-shadow: 0 0  rgba(35, 129, 206, 0.9);
-    top: 5px;
-}
-aside .css-button-3d--sky {
-    min-width: 80px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: #3a86ff;
-    box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
+        min-width: 130px;
+        height: 40px;
+        font-size: 0.8rem;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background: #3a86ff;
+        box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
     }
-    
-    .grid-item dvi img{
-        width: 120px
+    .css-button-3d--sky:hover {
+        box-shadow: 0 3px  rgba(0, 0, 0, 0.9);
+        top: 1px;
     }
-    footer{
-        width: 320px;
+    .css-button-3d--sky:active {
+        box-shadow: 0 0  rgba(35, 129, 206, 0.9);
+        top: 5px;
+    }
+    aside .css-button-3d--sky {
+        min-width: 6vw;
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background: #3a86ff;
+        box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
     }
     footer {
-        font-size: xx-small;
+        display: block;
+        color: rgb(0, 0, 0);
+        background-color:rgb(226, 178, 6);
+        margin-top: 5vh;
+        font-size: 1rem;
+        width: 100vw;
     }
-    footer a{
-        font-size: xx-small;
+    footer h2{
+        display: block;
+        font-size: 1.5rem ;
+        color: rgb(255, 255, 255);
+        border: solid black 2px;
+        background-color:  rgba(35, 129, 206, 0.9);
+        text-align: center;
     }
-    .flex-item__redes img{
-        width: 15px;
-        height: 15px;
+    footer h3{
+        margin-bottom: 1vh;
+        font-size: 1rem;
     }
-    .flex-container .icono_footer img{
-        width: 100px;
-        height: 200px;
+    footer p{
+        text-align: center;
     }
-    ;
+    .flex-container{
+        display: flex;
+        width: 100vw;
+        padding-left: 1vw;
+        
+    }
+    .flex-item__web{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        font-size: 0.8rem;
+    }
+    .flex-item__contact{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        margin-top: 1vh;
+        margin-right: 3vw;
+        text-align: end;
+        width: 30vw;
+        font-size: 0.8rem;
+    }
+    .flex-item__redes{
+        width: fit-content;
+        font-size: 0.8rem;
+    }
+    footer .icono-suelo{
+        width: 20vw;
+        height: 20vh;
+    }
+    footer p{
+        text-align: center;
+        padding-bottom: 1vh;
+        font-size:0.8rem ;
+    }
 }
