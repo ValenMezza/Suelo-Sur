@@ -12,7 +12,8 @@ body{
     overflow-x: hidden;
 }
 header{
-    background-color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 42%, rgb(226, 178, 6) 100%);
 }
 header img{
     display: flex;
