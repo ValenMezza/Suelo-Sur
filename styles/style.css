@@ -726,7 +726,7 @@ footer p{
         text-align: start;
         margin-left: 1px;
     }
-    aside p{
+    aside H5{
         padding-top: 20px;
     }
     
@@ -754,7 +754,7 @@ footer p{
         box-shadow: 0 5px  rgba(35, 129, 206, 0.9);
     }
     .css-button-3d--sky:hover {
-        box-shadow: 0 3px  rgba(35, 129, 206, 0.9);
+        box-shadow: 0 3px  black;
         top: 1px;
     }
     .css-button-3d--sky:active {
