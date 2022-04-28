@@ -1,98 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/icono-suelosur.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <title>Suelo Sur</title>
 </head>
-<body>  
+
+<body>
     <header>
-        <div >
-            <a  href="index.html"><img class="icono-suelo" height="100%"  width="350px" src="imagenes/suelosur.jpg" alt=""></a>
+        <div>
+            <a href="index.html"><img class="icono-suelo" height="100%" width="350px" src="imagenes/suelosur.jpg"
+                    alt=""></a>
         </div>
-        <nav class="nav-header">
-            <div class="nav-header__nosotros"><a  href="pages/nosotros.html"><button class="css-button-3d--sky">Sobre nosotros</button></a></div>
-            <div class="nav-header__ubicacion"><a  href="pages/ubicacion.html"><button class="css-button-3d--sky">Ubicación</button></a></div>
-            <div class="nav-header__contacto"><a  href="pages/contacto.html"><button class="css-button-3d--sky">Contacto</button></a></div>
-            <div class="nav-header__cuenta"><a href="#"><button class="css-button-3d--sky">Cuenta</button></a></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">SUELO SUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos y servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/compra.html">Fletes</a></li>
+                                <li><a class="dropdown-item" href="./pages/compra.html">Contenedores</a></li>
+                                <li><a class="dropdown-item" href="./pages/compra.html">Áridos</a></li>
+                                <li><a class="dropdown-item" href="./pages/compra.html">Movimientos de suelo</a></li>
+                                <li><a class="dropdown-item" href="./pages/compra.html">Alquiler de maquinaria</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/ayuda.html">¿Cómo comprar?</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./pages/nosotros.html" class="nav-link active">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/ubicacion.html" class="nav-link active">Ubicación</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
+                            aria-label="Search">
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="grid-container">
         <main class="grid-item">
-                <div class="grid-item__flete">
-                    <ul><H4>Fletes</H4>
-                    <li><a  href="pages/compra.html"><img height="300px" width="350px"  src="imagenes/camion.jpeg" alt=""></a></li>
-                    <p><b><a  href="pages/compra.html"><button class="css-button-3d--sky">¡Consultanos!</button> </a></b></p>
-                    </ul>
+            <div class="grid-item__articulo">
+                <img height="300px" width="350px" src="./imagenes/camion.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fletes</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius,
+                        dolorum similique maxime eligendi </p>
+                    <button type="button" class="btn btn-outline-secondary"><a href="./pages/compra.html">Ver más</a></button>
                 </div>
-    
-                <div class="grid-item__contenedor">
-                    <ul><h4>Contenedores</h4>
-                        <li ><a href="pages/compra.html"><img height="300px" width="350px" src="imagenes/contenedor.jpeg" alt=""></a></li>
-                        <p><b><a  href="pages/compra.html"><button class="css-button-3d--sky">¡Consultanos!</button></a></b></p>
-                    </ul>
+            </div>
+            <div class="grid-item__articulo">
+                <img height="300px" width="350px" src="./imagenes/contenedor.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Contenedores</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius,
+                        dolorum similique maxime eligendi </p>
+                        <button type="button" class="btn btn-outline-secondary"><a href="./pages/compra.html">Ver más</a></button>
+                </div>
+            </div>
+
+            <div class="grid-item__articulo">
+
+                <img height="300px" width="350px" src="./imagenes/aridos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Áridos</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius,
+                        dolorum similique maxime eligendi </p>
+                        <button type="button" class="btn btn-outline-secondary"><a href="./pages/compra.html">Ver más</a></button>
                 </div>
 
-                <div class="grid-item__aridos">
-                    <ul><h4>Áridos para tu obra</h4>
-                        <li><a  href="pages/compra.html"><img height="300px" width="350px" src="imagenes/aridos.jpg" alt=""></a></li>
-                        <p><b><a href="pages/compra.html"><button class="css-button-3d--sky">¡Consultanos!</button></a></b></p>
-                    </ul>
+            </div>
+            <div class="grid-item__articulo">
+                <img height="300px" width="350px" src="./imagenes/mov-suelo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Movimientos de suelos</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius,
+                        dolorum similique maxime eligendi </p>
+                        <button type="button" class="btn btn-outline-secondary"><a href="./pages/compra.html">Ver más</a></button>
                 </div>
-                <div class="grid-item__movimiento">
-                    <ul><h4>Movimietos de suelo</h4>
-                        <li><a href="pages/compra.html"><img height="300px" width="350px" src="imagenes/mov-suelo.jpg" alt=""></a></li>
-                        <p><b><a href="pages/compra.html"><button class="css-button-3d--sky">¡Consultanos!</button></a></b></p>
-                    </ul>  
-                </div>
-                <div class="grid-item__alquiler">
-                    <ul><h4>Alquiler de maquinaria</h4>
-                        <li><a href="pages/compra.html"><img height="300px" width="350px" src="imagenes/aquiles.jpg" alt=""></a></li>
-                        <p><b><a href="pages/compra.html"><button class="css-button-3d--sky">¡Consultanos!</button></a></b></p>
-                    </ul>  
-                </div>
-                    </main>
+            </div>
+
+
+            <div class="grid-item__articulo">
+                <img height="300px" width="350px" src="./imagenes/aquiles.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Alquiler de maquinaria</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius,
+                        dolorum similique maxime eligendi </p>
+                        <button type="button" class="btn btn-outline-secondary"><a href="./pages/compra.html">Ver más</a></button>                </div>
+            </div>
+        </main>
         <aside class="grid-item__aside">
             <h3>¿Todavía no tenés una cuenta?</h3>
-            
-            <ul><h4>Tenemos beneficios exclusivos para vos: </h4> 
+
+            <ul>
+                <h4>Tenemos beneficios exclusivos para vos: </h4>
                 <li>Podrás acceder a descuentos</li>
                 <li>Podrás gestionar una cuenta corriente</li>
                 <li>Mayor facilidad a la hora de pagar</li>
                 <li>¡Y MUCHAS COSAS MÁS!</li>
             </ul>
             <H5> ¡Registrate ya! </H5>
-            <button class="css-button-3d--sky">Registrarme</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
         </aside>
     </div>
 
     <footer>
-        <a href="index.html"><h2>SUELO SUR</h2></a>
-            <div class="flex-container">
-                <div class="flex-item__web">
-                    <h3>Seguinos en nuestras redes:</h3>
-                    <a target="blank" class="flex-item__redes" href="https://www.facebook.com/suelosur.sas"><img height="30px" src="imagenes/fbpng.png" alt="">Facebook</a>
-                    <a target="blank" class="flex-item__redes" href="https://wa.me/+5493834923578"><img height="30px" src="imagenes/wsp.png" alt="">WhatsApp</a>
-                    <a target="blank" class="flex-item__redes" href="https://instagram.com/suelosur_sas?utm_medium=copy_link"><img height="30px" src="imagenes/ig.png" alt="">Instagram</a>
-                    <a class="flex-item__redes" href="pages/ayuda.html">Ayuda</a>
-                </div>
-                <div class="flex-item__icono">
-                    <img class="icono-suelo" height="300px" width="300px" src="imagenes/suelosur.jpg" alt="">
-                </div>
-                <div class="flex-item__contact">
-                    <ul>
-                        <li>Contacto 4613233 / 351 3496843 / 3513490788</li>
-                        <li>suelosur@gmail.com</li>
-                        <li>Felipe belardinelli 5035</li>
-                        <li>B° Las Huertillas</li>
-                        <li>Córdoba</li>
-                    <ul>     
-                </div> 
+        <a href="index.html">
+            <h2>SUELO SUR</h2>
+        </a>
+        <div class="flex-container">
+            <div class="flex-item__web">
+                <h3>Seguinos en nuestras redes:</h3>
+                <a target="blank" class="flex-item__redes" href="https://www.facebook.com/suelosur.sas"><img
+                        height="30px" src="imagenes/fbpng.png" alt="">Facebook</a>
+                <a target="blank" class="flex-item__redes" href="https://wa.me/+5493834923578"><img height="30px"
+                        src="imagenes/wsp.png" alt="">WhatsApp</a>
+                <a target="blank" class="flex-item__redes"
+                    href="https://instagram.com/suelosur_sas?utm_medium=copy_link"><img height="30px"
+                        src="imagenes/ig.png" alt="">Instagram</a>
+                <a class="flex-item__redes" href="pages/ayuda.html">Ayuda</a>
             </div>
+            <div class="flex-item__icono">
+                <img class="icono-suelo" height="300px" width="300px" src="imagenes/suelosur.jpg" alt="">
+            </div>
+            <div class="flex-item__contact">
+                <ul>
+                    <li>Contacto 4613233 / 351 3496843 / 3513490788</li>
+                    <li>suelosur@gmail.com</li>
+                    <li>Felipe belardinelli 5035</li>
+                    <li>B° Las Huertillas</li>
+                    <li>Córdoba</li>
+                    <ul>
+            </div>
+        </div>
         <p>Copyright: Todos los derechos reservados</p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
