@@ -211,42 +211,18 @@ aside p {
     justify-content: center;
     margin-bottom: 15px;
 }
-
-.formulario__contacto fieldset label {
-    background-color: white;
-}
-
-.formulario__contacto {
-    display: flex;
-    width: 30vw;
-    justify-content: center;
-    padding-left: 2vw;
-    margin-bottom: 2vh
-}
-
-fieldset label {
-    display: block;
-    width: 25vw;
-    padding-bottom: 2px;
-    padding-top: 2px;
-    margin-left: 1vw;
-}
-
-fieldset textarea {
-    margin-left: 2vw;
-}
-
-fieldset input {
-    margin-left: 2vw;
-}
-
 .flex-item__contacto {
     width: 30vw;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-
+.form-contact-compra{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin-left: 1vw;
+}
 div .boton {
     display: block;
     justify-content: center;
@@ -2070,9 +2046,8 @@ footer p {
 
     .formulario__contacto {
         display: flex;
+        justify-content: flex-start;
         width: 30vw;
-        justify-content: center;
-        padding-left: 2vw;
         margin-bottom: 2vh
     }
 
@@ -2081,22 +2056,12 @@ footer p {
         width: 25vw;
         padding-bottom: 2px;
         padding-top: 2px;
-        margin-left: 1vw;
+
     }
 
-    fieldset textarea {
-        margin-left: 2vw;
-    }
-
-    fieldset input {
-        margin-left: 2vw;
-    }
 
     .flex-item__contacto {
         width: 30vw;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     div .boton {
