@@ -2203,11 +2203,10 @@ footer p {
 
     footer h3 {
         margin-bottom: 1vh;
+        font-size: 0.9rem;
     }
 
-    footer p {
-        text-align: center;
-    }
+
 
     .flex-container {
         display: flex;
@@ -2252,6 +2251,7 @@ footer p {
     footer p {
         text-align: center;
         padding-bottom: 1vh;
+        font-size: 0.6rem;
     }
 }
 
@@ -2583,10 +2583,12 @@ footer p {
 
     footer h3 {
         margin-bottom: 1vh;
+        font-size: 0.9rem ;
     }
 
     footer p {
         text-align: center;
+        font-size: 0.6rem;
     }
 
     .flex-container {
