@@ -10,6 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    scrollbar-width: 100vw;
 }
 
 header {
@@ -112,14 +113,17 @@ header div{
     border-radius: 5%;
     margin: 1vw;
 }
-.grid-item__articulo:hover{
+
+.grid-item__articulo:hover {
     background-color: rgba(255, 247, 85, 1);
-    color:rgb(0, 0, 0)
+    color: rgb(0, 0, 0)
 }
-.grid-item__articulo button:hover{
+
+.grid-item__articulo button:hover {
     background-color: rgb(255, 255, 255);
     color: black;
 }
+
 .grid-item__articulo img {
     display: flex;
     margin-left: auto;
@@ -157,7 +161,8 @@ main {
 main li {
     list-style: none;
 }
-main .card-title{
+
+main .card-title {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -165,21 +170,24 @@ main .card-title{
     display: flex;
     flex-wrap: wrap;
 }
-main .card-body .card-text{
+
+main .card-body .card-text {
     display: flex;
     flex-wrap: wrap;
     font-size: 0.8rem;
 }
-main .card-title:hover{
-    color:#3a86ff
+
+main .card-title:hover {
+    color: #3a86ff
 }
 
 main img {
     border: solid black 2px;
 }
-aside:hover{
+
+aside:hover {
     background-color: #3a85ffa1;
-    color:white;
+    color: white;
 }
 
 aside h3 {
@@ -187,7 +195,8 @@ aside h3 {
     font-weight: bolder;
     margin: 1vw;
 }
-aside h4{
+
+aside h4 {
     font-size: 1.3rem;
 }
 
@@ -217,13 +226,15 @@ aside ul {
     justify-content: center;
     margin-bottom: 15px;
 }
+
 .flex-item__contacto {
     width: 30vw;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-.form-contact-compra{
+
+.form-contact-compra {
     display: flex;
     flex-wrap: wrap;
     width: 70vw;
@@ -362,6 +373,8 @@ footer p {
         background-color: rgb(221, 223, 225);
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
+        scrollbar-width: 100vw;
     }
 
     header {
@@ -511,13 +524,15 @@ footer p {
     main li {
         list-style: none;
     }
-    main .card-title{
+
+    main .card-title {
         font-size: 1rem;
         text-align: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
+
     main h4 {
         font-size: 2rem;
         color: rgb(0, 0, 0);
@@ -537,10 +552,12 @@ footer p {
         font-weight: bolder;
         padding: 1vw;
     }
-    aside h4{
+
+    aside h4 {
         font-size: 0.8rem;
     }
-    aside h5{
+
+    aside h5 {
         font-size: 0.8rem;
     }
 
@@ -552,14 +569,17 @@ footer p {
         justify-items: start;
         font-size: 0.6rem;
     }
-    li{
+
+    li {
         font-size: 0.7rem;
     }
+
     aside ul {
         text-align: start;
         margin-left: 0.2vw;
     }
-    aside button .btn.btn-secondary{
+
+    aside button .btn.btn-secondary {
         font-size: 0.2rem;
     }
 
@@ -567,7 +587,7 @@ footer p {
         padding-top: 2vh;
     }
 
-    .form-contact-compra{
+    .form-contact-compra {
         font-size: 1rem;
     }
 
@@ -741,14 +761,16 @@ footer p {
 /* VISTA 768PX*/
 
 
-
 @media screen and (max-width: 768px) {
+
     body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 16px;
         background-color: rgb(221, 223, 225);
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
+        scrollbar-width: 100vw;
     }
 
     header {
@@ -888,7 +910,8 @@ footer p {
     main li {
         list-style: none;
     }
-    main .card-title{
+
+    main .card-title {
         font-size: 1rem;
         text-align: center;
         justify-content: center;
@@ -896,7 +919,7 @@ footer p {
         flex-wrap: wrap;
     }
 
-    main .card-text{
+    main .card-text {
         font-size: 0.8rem;
         display: flex;
         flex-wrap: wrap;
@@ -907,10 +930,12 @@ footer p {
         font-weight: bolder;
         padding: 1vw;
     }
-    aside h4{
+
+    aside h4 {
         font-size: 0.8rem;
     }
-    aside h5{
+
+    aside h5 {
         font-size: 0.8rem;
     }
 
@@ -922,26 +947,31 @@ footer p {
         justify-items: start;
         font-size: 0.6rem;
     }
-    li{
+
+    li {
         font-size: 0.7rem;
     }
+
     aside ul {
         text-align: start;
         margin-left: 0.2vw;
     }
-    aside button .btn.btn-secondary{
+
+    aside button .btn.btn-secondary {
         font-size: 0.2rem;
     }
 
     aside p {
         padding-top: 2vh;
     }
+
     #location {
         display: flex;
         justify-content: center;
         margin-bottom: 15px;
     }
-    .form-contact-compra{
+
+    .form-contact-compra {
         font-size: 1rem;
     }
 
@@ -1124,6 +1154,8 @@ footer p {
         background-color: rgb(221, 223, 225);
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
+        scrollbar-width: 100vw;
     }
 
     header {
@@ -1273,13 +1305,15 @@ footer p {
     main li {
         list-style: none;
     }
-    main .card-title{
+
+    main .card-title {
         font-size: 1rem;
         text-align: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
+
     main h4 {
         font-size: 2rem;
         color: rgb(0, 0, 0);
@@ -1299,10 +1333,12 @@ footer p {
         font-weight: bolder;
         padding: 1vw;
     }
-    aside h4{
+
+    aside h4 {
         font-size: 0.8rem;
     }
-    aside h5{
+
+    aside h5 {
         font-size: 0.8rem;
     }
 
@@ -1314,14 +1350,17 @@ footer p {
         justify-items: start;
         font-size: 0.6rem;
     }
-    li{
+
+    li {
         font-size: 0.7rem;
     }
+
     aside ul {
         text-align: start;
         margin-left: 0.2vw;
     }
-    aside button .btn.btn-secondary{
+
+    aside button .btn.btn-secondary {
         font-size: 0.2rem;
     }
 
@@ -1336,7 +1375,7 @@ footer p {
         margin-bottom: 15px;
     }
 
-    .form-contact-compra{
+    .form-contact-compra {
         font-size: 1rem;
     }
 
@@ -1484,6 +1523,7 @@ footer p {
         width: fit-content;
         margin-bottom: 1vh
     }
+
     footer p {
         text-align: center;
         padding-bottom: 1vh;
@@ -1509,6 +1549,8 @@ footer p {
         background-color: rgb(221, 223, 225);
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
+        scrollbar-width: 100vw;
     }
 
     header {
@@ -1658,13 +1700,15 @@ footer p {
     main li {
         list-style: none;
     }
-    main .card-title{
+
+    main .card-title {
         font-size: 1rem;
         text-align: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
+
     main h4 {
         font-size: 2rem;
         color: rgb(0, 0, 0);
@@ -1684,10 +1728,12 @@ footer p {
         font-weight: bolder;
         padding: 1vw;
     }
-    aside h4{
+
+    aside h4 {
         font-size: 0.8rem;
     }
-    aside h5{
+
+    aside h5 {
         font-size: 0.8rem;
     }
 
@@ -1699,14 +1745,17 @@ footer p {
         justify-items: start;
         font-size: 0.6rem;
     }
-    li{
+
+    li {
         font-size: 0.7rem;
     }
+
     aside ul {
         text-align: start;
         margin-left: 0.2vw;
     }
-    aside button .btn.btn-secondary{
+
+    aside button .btn.btn-secondary {
         font-size: 0.2rem;
     }
 
@@ -1714,7 +1763,7 @@ footer p {
         padding-top: 2vh;
     }
 
-    .form-contact-compra{
+    .form-contact-compra {
         font-size: 1rem;
     }
 
@@ -1730,6 +1779,7 @@ footer p {
         justify-content: center;
         margin-bottom: 15px;
     }
+
     fieldset label {
         display: block;
         width: 25vw;
@@ -1882,8 +1932,9 @@ footer p {
         background-color: rgb(221, 223, 225);
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
+        scrollbar-width: 100vw;
     }
-
     header {
         background: rgb(255, 255, 255);
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 71%, rgba(255, 247, 85, 1) 100%);
@@ -2031,13 +2082,15 @@ footer p {
     main li {
         list-style: none;
     }
-    main .card-title{
+
+    main .card-title {
         font-size: 1rem;
         text-align: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
+
     main h4 {
         font-size: 2rem;
         color: rgb(0, 0, 0);
@@ -2057,10 +2110,12 @@ footer p {
         font-weight: bolder;
         padding: 1vw;
     }
-    aside h4{
+
+    aside h4 {
         font-size: 0.8rem;
     }
-    aside h5{
+
+    aside h5 {
         font-size: 0.8rem;
     }
 
@@ -2072,14 +2127,17 @@ footer p {
         justify-items: start;
         font-size: 0.6rem;
     }
-    li{
+
+    li {
         font-size: 0.7rem;
     }
+
     aside ul {
         text-align: start;
         margin-left: 0.2vw;
     }
-    aside button .btn.btn-secondary{
+
+    aside button .btn.btn-secondary {
         font-size: 0.2rem;
     }
 
@@ -2087,7 +2145,7 @@ footer p {
         padding-top: 2vh;
     }
 
-    .form-contact-compra{
+    .form-contact-compra {
         font-size: 1rem;
     }
 
@@ -2263,8 +2321,9 @@ footer p {
         background-color: rgb(221, 223, 225);
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
+        scrollbar-width: 100vw;
     }
-
     header {
         background: rgb(255, 255, 255);
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 71%, rgba(255, 247, 85, 1) 100%);
@@ -2393,7 +2452,8 @@ footer p {
     main img {
         height: 100vh;
     }
-    main .card-title{
+
+    main .card-title {
         font-size: 1rem;
         text-align: center;
         justify-content: center;
@@ -2438,10 +2498,12 @@ footer p {
         font-weight: bolder;
         padding: 1vw;
     }
-    aside h4{
+
+    aside h4 {
         font-size: 0.8rem;
     }
-    aside h5{
+
+    aside h5 {
         font-size: 0.8rem;
     }
 
@@ -2453,15 +2515,18 @@ footer p {
         justify-items: start;
         font-size: 0.6rem;
     }
-    li{
+
+    li {
         font-size: 0.7rem;
     }
+
     aside ul {
         text-align: start;
         font-size: 0.5rem;
         margin-left: 0.2vw;
     }
-    aside button .btn.btn-secondary{
+
+    aside button .btn.btn-secondary {
         font-size: 0.2rem;
     }
 
@@ -2474,7 +2539,8 @@ footer p {
         justify-content: center;
         margin-bottom: 15px;
     }
-    .form-contact-compra{
+
+    .form-contact-compra {
         font-size: 1rem;
     }
 
@@ -2577,7 +2643,7 @@ footer p {
 
     footer h3 {
         margin-bottom: 1vh;
-        font-size: 0.9rem ;
+        font-size: 0.9rem;
     }
 
     footer p {
@@ -2633,7 +2699,7 @@ footer p {
 }
 
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
