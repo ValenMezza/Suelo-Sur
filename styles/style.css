@@ -34,11 +34,13 @@ header div {
     display: flex;
     justify-content: center;
 }
-header div a:hover{
+
+header div a:hover {
     background-color: rgba(128, 128, 128, 0.208);
     padding-right: 1vw;
     padding-left: 1vw;
 }
+
 /*
 header nav{
     display: grid;
@@ -285,6 +287,7 @@ footer {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, #2e86d39e 45%);
     margin-top: 5vh;
 }
+
 footer h2 {
     display: block;
     color: rgb(255, 255, 255);
@@ -297,6 +300,7 @@ footer h3 {
     text-align: left;
     margin-bottom: 1vh;
 }
+
 footer p {
     text-align: center;
     padding-bottom: 1vh;
@@ -323,10 +327,12 @@ footer li {
     text-align: end;
     width: 30vw;
 }
-.flex-item__web img{
+
+.flex-item__web img {
     width: 2vw;
     height: 4vh;
 }
+
 .flex-item__contact {
     display: flex;
     justify-items: flex-start;
@@ -334,8 +340,9 @@ footer li {
     flex-direction: column;
     justify-content: space-between;
     width: 29vw;
-}        
-.flex-item__contact li{
+}
+
+.flex-item__contact li {
     display: flex;
     text-align: flex-start;
     justify-content: start;
@@ -398,11 +405,13 @@ footer li {
         display: flex;
         justify-content: center;
     }
-    header div a:hover{
+
+    header div a:hover {
         background-color: rgba(128, 128, 128, 0.208);
         padding-right: 1vw;
         padding-left: 1vw;
     }
+
     /*
     .header nav{
         display: grid;
@@ -709,6 +718,7 @@ footer li {
         padding-left: 1%;
 
     }
+
     .flex-item__web {
         display: flex;
         flex-direction: column;
@@ -717,10 +727,12 @@ footer li {
         text-align: end;
         width: 30vw;
     }
-    .flex-item__web img{
+
+    .flex-item__web img {
         width: 2vw;
         height: 4vh;
     }
+
     .flex-item__contact {
         display: flex;
         justify-items: flex-start;
@@ -728,8 +740,9 @@ footer li {
         flex-direction: column;
         justify-content: space-between;
         width: 29vw;
-    }        
-    .flex-item__contact li{
+    }
+
+    .flex-item__contact li {
         display: flex;
         text-align: flex-start;
         justify-content: start;
@@ -794,11 +807,13 @@ footer li {
         display: flex;
         justify-content: center;
     }
-    header div a:hover{
+
+    header div a:hover {
         background-color: rgba(128, 128, 128, 0.208);
         padding-right: 1vw;
         padding-left: 1vw;
     }
+
     /*
     .header nav{
         display: grid;
@@ -1095,10 +1110,12 @@ footer li {
         text-align: end;
         width: 30vw;
     }
-    .flex-item__web img{
+
+    .flex-item__web img {
         width: 2vw;
         height: 4vh;
     }
+
     .flex-item__contact {
         display: flex;
         justify-items: flex-start;
@@ -1106,8 +1123,9 @@ footer li {
         flex-direction: column;
         justify-content: space-between;
         width: 29vw;
-    }        
-    .flex-item__contact li{
+    }
+
+    .flex-item__contact li {
         display: flex;
         text-align: flex-start;
         justify-content: start;
@@ -1185,11 +1203,13 @@ footer li {
         display: flex;
         justify-content: center;
     }
-    header div a:hover{
+
+    header div a:hover {
         background-color: rgba(128, 128, 128, 0.208);
         padding-right: 1vw;
         padding-left: 1vw;
     }
+
     /*
     .header nav{
         display: grid;
@@ -1419,7 +1439,7 @@ footer li {
         margin: auto;
     }
 
- 
+
 
     .grid-container__nosotros {
         display: grid;
@@ -1497,10 +1517,12 @@ footer li {
         text-align: end;
         width: 30vw;
     }
-    .flex-item__web img{
+
+    .flex-item__web img {
         width: 2vw;
         height: 4vh;
     }
+
     .flex-item__contact {
         display: flex;
         justify-items: flex-start;
@@ -1508,8 +1530,9 @@ footer li {
         flex-direction: column;
         justify-content: space-between;
         width: 29vw;
-    }        
-    .flex-item__contact li{
+    }
+
+    .flex-item__contact li {
         display: flex;
         text-align: flex-start;
         justify-content: start;
@@ -1581,11 +1604,13 @@ footer li {
         display: flex;
         justify-content: center;
     }
-    header div a:hover{
+
+    header div a:hover {
         background-color: rgba(128, 128, 128, 0.208);
         padding-right: 1vw;
         padding-left: 1vw;
     }
+
     /*
     .header nav{
         display: grid;
@@ -1885,10 +1910,12 @@ footer li {
         text-align: end;
         width: 30vw;
     }
-    .flex-item__web img{
+
+    .flex-item__web img {
         width: 2vw;
         height: 4vh;
     }
+
     .flex-item__contact {
         display: flex;
         justify-items: flex-start;
@@ -1896,8 +1923,9 @@ footer li {
         flex-direction: column;
         justify-content: space-between;
         width: 29vw;
-    }        
-    .flex-item__contact li{
+    }
+
+    .flex-item__contact li {
         display: flex;
         text-align: flex-start;
         justify-content: start;
@@ -1942,6 +1970,7 @@ footer li {
         overflow-x: hidden;
         scrollbar-width: 100vw;
     }
+
     header {
         background: rgb(255, 255, 255);
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 71%, rgba(255, 247, 85, 1) 100%);
@@ -1963,15 +1992,19 @@ footer li {
         display: flex;
         justify-content: center;
     }
-    header div a:hover{
+
+    header div a:hover {
         background-color: rgba(128, 128, 128, 0.208);
         padding-right: 1vw;
         padding-left: 1vw;
     }
-    fomr .d-flex{
+
+    form .d-flex {
         display: block;
         width: 100vw;
+        font-size: 0.6rem;
     }
+
     /*
     .header nav{
         display: grid;
@@ -2038,14 +2071,15 @@ footer li {
         grid-area: grid-item;
     }
 
-    .grid-item__articulo h5 {
-
-        font-size: 1rem;
+    .grid-item__articulo .card-title {
+        font-size: 0.7;
+        text-align: center;
+        padding: ;
         font-weight: bolder;
     }
 
     .grid-item__articulo p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .grid-item__articulo {
@@ -2056,7 +2090,7 @@ footer li {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        height: 25vh;
+        width: 28vw;
     }
 
     img .card-img-top {
@@ -2269,6 +2303,7 @@ footer li {
         padding-left: 1%;
 
     }
+
     .flex-item__web {
         display: flex;
         flex-direction: column;
@@ -2277,10 +2312,12 @@ footer li {
         text-align: end;
         width: 30vw;
     }
-    .flex-item__web img{
+
+    .flex-item__web img {
         width: 2vw;
         height: 4vh;
     }
+
     .flex-item__contact {
         display: flex;
         justify-items: flex-start;
@@ -2288,8 +2325,9 @@ footer li {
         flex-direction: column;
         justify-content: space-between;
         width: 29vw;
-    }        
-    .flex-item__contact li{
+    }
+
+    .flex-item__contact li {
         display: flex;
         text-align: flex-start;
         justify-content: start;
@@ -2335,6 +2373,7 @@ footer li {
         overflow-x: hidden;
         scrollbar-width: 100vw;
     }
+
     header {
         background: rgb(255, 255, 255);
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 71%, rgba(255, 247, 85, 1) 100%);
@@ -2356,7 +2395,8 @@ footer li {
         display: flex;
         justify-content: center;
     }
-    header div a:hover{
+
+    header div a:hover {
         background-color: rgba(128, 128, 128, 0.208);
         padding-right: 1vw;
         padding-left: 1vw;
@@ -2589,6 +2629,7 @@ footer li {
         justify-content: space-between;
         width: 29vw;
     }
+
     div .boton {
         display: block;
         justify-content: center;
@@ -2674,10 +2715,12 @@ footer li {
         text-align: end;
         width: 30vw;
     }
-    .flex-item__web img{
+
+    .flex-item__web img {
         width: 2vw;
         height: 4vh;
     }
+
     .flex-item__contact {
         display: flex;
         justify-items: flex-start;
@@ -2685,8 +2728,9 @@ footer li {
         flex-direction: column;
         justify-content: space-between;
         width: 29vw;
-    }        
-    .flex-item__contact li{
+    }
+
+    .flex-item__contact li {
         display: flex;
         text-align: flex-start;
         justify-content: start;
