@@ -1968,6 +1968,10 @@ footer li {
         padding-right: 1vw;
         padding-left: 1vw;
     }
+    fomr .d-flex{
+        display: block;
+        width: 100vw;
+    }
     /*
     .header nav{
         display: grid;
