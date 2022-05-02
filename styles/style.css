@@ -34,7 +34,11 @@ header div {
     display: flex;
     justify-content: center;
 }
-
+header div a:hover{
+    background-color: rgba(128, 128, 128, 0.208);
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
 /*
 header nav{
     display: grid;
@@ -227,12 +231,6 @@ aside ul {
     margin-bottom: 15px;
 }
 
-.flex-item__contacto {
-    width: 30vw;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .form-contact-compra {
     display: flex;
@@ -241,13 +239,6 @@ aside ul {
     margin-left: 1vw;
 }
 
-.carrito__compra {
-    display: grid;
-    justify-content: flex-start;
-    width: 40%;
-    margin-bottom: 2vh;
-    margin-left: 2vw;
-}
 
 .grid-container__nosotros {
     display: grid;
@@ -294,7 +285,6 @@ footer {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, #2e86d39e 45%);
     margin-top: 5vh;
 }
-
 footer h2 {
     display: block;
     color: rgb(255, 255, 255);
@@ -304,11 +294,12 @@ footer h2 {
 }
 
 footer h3 {
+    text-align: left;
     margin-bottom: 1vh;
 }
-
 footer p {
     text-align: center;
+    padding-bottom: 1vh;
 }
 
 footer li {
@@ -327,18 +318,30 @@ footer li {
 .flex-item__web {
     display: flex;
     flex-direction: column;
-    width: 30vw;
-}
-
-.flex-item__contact {
-    display: flex;
-    flex-direction: column;
     justify-items: flex-end;
-    margin-top: 1vh;
     margin-right: 1vw;
     text-align: end;
     width: 30vw;
 }
+.flex-item__web img{
+    width: 2vw;
+    height: 4vh;
+}
+.flex-item__contact {
+    display: flex;
+    justify-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 29vw;
+}        
+.flex-item__contact li{
+    display: flex;
+    text-align: flex-start;
+    justify-content: start;
+}
+
+
 
 .flex-item__icono {
     display: block;
@@ -357,10 +360,7 @@ footer li {
     margin-bottom: 1vh
 }
 
-footer p {
-    text-align: center;
-    padding-bottom: 1vh;
-}
+
 
 
 
@@ -398,7 +398,11 @@ footer p {
         display: flex;
         justify-content: center;
     }
-
+    header div a:hover{
+        background-color: rgba(128, 128, 128, 0.208);
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
     /*
     .header nav{
         display: grid;
@@ -605,14 +609,6 @@ footer p {
     }
 
 
-    .formulario__contacto {
-        display: flex;
-        width: 30vw;
-        justify-content: center;
-        padding-left: 2vw;
-        margin-bottom: 2vh
-    }
-
     fieldset label {
         display: block;
         width: 25vw;
@@ -629,11 +625,14 @@ footer p {
         margin-left: 2vw;
     }
 
-    .flex-item__contacto {
-        width: 30vw;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+    .flex-item__contact {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        margin-top: 1vh;
+        margin-right: 1vw;
+        text-align: end;
+        width: 26vw;
     }
 
     div .boton {
@@ -642,13 +641,6 @@ footer p {
         margin: auto;
     }
 
-    .carrito__compra {
-        display: grid;
-        justify-content: flex-start;
-        width: 40%;
-        margin-bottom: 2vh;
-        margin-left: 2vw;
-    }
 
     .grid-container__nosotros {
         display: grid;
@@ -717,22 +709,30 @@ footer p {
         padding-left: 1%;
 
     }
-
     .flex-item__web {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 30vw;
-    }
-
-    .flex-item__contact {
-        display: flex;
-        flex-direction: column;
         justify-items: flex-end;
-        margin-top: 1vh;
         margin-right: 1vw;
         text-align: end;
         width: 30vw;
+    }
+    .flex-item__web img{
+        width: 2vw;
+        height: 4vh;
+    }
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+    }        
+    .flex-item__contact li{
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
     }
 
     .flex-item__icono {
@@ -794,7 +794,11 @@ footer p {
         display: flex;
         justify-content: center;
     }
-
+    header div a:hover{
+        background-color: rgba(128, 128, 128, 0.208);
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
     /*
     .header nav{
         display: grid;
@@ -981,14 +985,6 @@ footer p {
         font-size: 2.5rem;
     }
 
-    .formulario__contacto {
-        display: flex;
-        width: 30vw;
-        justify-content: center;
-        padding-left: 2vw;
-        margin-bottom: 2vh
-    }
-
     fieldset label {
         display: block;
         width: 25vw;
@@ -1005,11 +1001,11 @@ footer p {
         margin-left: 2vw;
     }
 
-    .flex-item__contacto {
-        width: 30vw;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+    .flex-item__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
     }
 
     div .boton {
@@ -1018,13 +1014,7 @@ footer p {
         margin: auto;
     }
 
-    .carrito__compra {
-        display: grid;
-        justify-content: flex-start;
-        width: 40%;
-        margin-bottom: 2vh;
-        margin-left: 2vw;
-    }
+
 
     .grid-container__nosotros {
         display: grid;
@@ -1069,6 +1059,7 @@ footer p {
         background: rgb(255, 255, 255);
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, #2e86d39e 45%);
         margin-top: 5vh;
+        overflow-x: auto;
     }
 
     footer h2 {
@@ -1099,18 +1090,33 @@ footer p {
     .flex-item__web {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 30vw;
-    }
-
-    .flex-item__contact {
-        display: flex;
-        flex-direction: column;
         justify-items: flex-end;
-        margin-top: 1vh;
         margin-right: 1vw;
         text-align: end;
         width: 30vw;
+    }
+    .flex-item__web img{
+        width: 2vw;
+        height: 4vh;
+    }
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+    }        
+    .flex-item__contact li{
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
+    }
+
+
+    .flex-item__icono {
+        display: block;
+        width: 40vw;
     }
 
     .flex-item__icono {
@@ -1179,7 +1185,11 @@ footer p {
         display: flex;
         justify-content: center;
     }
-
+    header div a:hover{
+        background-color: rgba(128, 128, 128, 0.208);
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
     /*
     .header nav{
         display: grid;
@@ -1402,12 +1412,6 @@ footer p {
         margin-left: 2vw;
     }
 
-    .flex-item__contacto {
-        width: 30vw;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     div .boton {
         display: block;
@@ -1415,13 +1419,7 @@ footer p {
         margin: auto;
     }
 
-    .carrito__compra {
-        display: grid;
-        justify-content: flex-start;
-        width: 40%;
-        margin-bottom: 2vh;
-        margin-left: 2vw;
-    }
+ 
 
     .grid-container__nosotros {
         display: grid;
@@ -1494,18 +1492,27 @@ footer p {
     .flex-item__web {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 30vw;
-    }
-
-    .flex-item__contact {
-        display: flex;
-        flex-direction: column;
         justify-items: flex-end;
-        margin-top: 1vh;
         margin-right: 1vw;
         text-align: end;
         width: 30vw;
+    }
+    .flex-item__web img{
+        width: 2vw;
+        height: 4vh;
+    }
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+    }        
+    .flex-item__contact li{
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
     }
 
     .flex-item__icono {
@@ -1574,7 +1581,11 @@ footer p {
         display: flex;
         justify-content: center;
     }
-
+    header div a:hover{
+        background-color: rgba(128, 128, 128, 0.208);
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
     /*
     .header nav{
         display: grid;
@@ -1796,20 +1807,7 @@ footer p {
         margin-left: 2vw;
     }
 
-    .flex-item__contacto {
-        width: 30vw;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    .carrito__compra {
-        display: grid;
-        justify-content: flex-start;
-        width: 40%;
-        margin-bottom: 2vh;
-        margin-left: 2vw;
-    }
 
     .grid-container__nosotros {
         display: grid;
@@ -1882,18 +1880,27 @@ footer p {
     .flex-item__web {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 30vw;
-    }
-
-    .flex-item__contact {
-        display: flex;
-        flex-direction: column;
         justify-items: flex-end;
-        margin-top: 1vh;
         margin-right: 1vw;
         text-align: end;
         width: 30vw;
+    }
+    .flex-item__web img{
+        width: 2vw;
+        height: 4vh;
+    }
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+    }        
+    .flex-item__contact li{
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
     }
 
     .flex-item__icono {
@@ -1956,7 +1963,11 @@ footer p {
         display: flex;
         justify-content: center;
     }
-
+    header div a:hover{
+        background-color: rgba(128, 128, 128, 0.208);
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
     /*
     .header nav{
         display: grid;
@@ -2179,12 +2190,6 @@ footer p {
         margin-left: 2vw;
     }
 
-    .flex-item__contacto {
-        width: 30vw;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     div .boton {
         display: block;
@@ -2192,13 +2197,7 @@ footer p {
         margin: auto;
     }
 
-    .carrito__compra {
-        display: grid;
-        justify-content: flex-start;
-        width: 40%;
-        margin-bottom: 2vh;
-        margin-left: 2vw;
-    }
+
 
     .grid-container__nosotros {
         display: grid;
@@ -2266,22 +2265,30 @@ footer p {
         padding-left: 1%;
 
     }
-
     .flex-item__web {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 30vw;
-    }
-
-    .flex-item__contact {
-        display: flex;
-        flex-direction: column;
         justify-items: flex-end;
-        margin-top: 1vh;
         margin-right: 1vw;
         text-align: end;
         width: 30vw;
+    }
+    .flex-item__web img{
+        width: 2vw;
+        height: 4vh;
+    }
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+    }        
+    .flex-item__contact li{
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
     }
 
     .flex-item__icono {
@@ -2344,6 +2351,11 @@ footer p {
     header div {
         display: flex;
         justify-content: center;
+    }
+    header div a:hover{
+        background-color: rgba(128, 128, 128, 0.208);
+        padding-right: 1vw;
+        padding-left: 1vw;
     }
 
     /*
@@ -2567,26 +2579,18 @@ footer p {
         margin-left: 2vw;
     }
 
-    .flex-item__contacto {
-        width: 30vw;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+    .flex-item__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
     }
-
     div .boton {
         display: block;
         justify-content: center;
         margin: auto;
     }
 
-    .carrito__compra {
-        display: grid;
-        justify-content: flex-start;
-        width: 40%;
-        margin-bottom: 2vh;
-        margin-left: 2vw;
-    }
 
     .grid-container__nosotros {
         display: grid;
@@ -2661,18 +2665,27 @@ footer p {
     .flex-item__web {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 30vw;
-    }
-
-    .flex-item__contact {
-        display: flex;
-        flex-direction: column;
         justify-items: flex-end;
-        margin-top: 1vh;
         margin-right: 1vw;
         text-align: end;
         width: 30vw;
+    }
+    .flex-item__web img{
+        width: 2vw;
+        height: 4vh;
+    }
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+    }        
+    .flex-item__contact li{
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
     }
 
     .flex-item__icono {
