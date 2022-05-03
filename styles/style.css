@@ -97,27 +97,26 @@ header div{
 }
 
 .grid-container {
-    margin-top: 50px;
-    margin-right: 5px;
+    margin-top: 1vh;
+    margin-right: 1vw;
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: repeat(2, fr);
     grid-template-areas:
-        "grid-item grid-item__aside"
-        "grid-item ."
+        "grid-item__articulo grid-item__aside"
+        "grid-item__articulo ."
 }
 
-.grid-item {
-    grid-area: grid-item;
-}
+
 
 .grid-item__articulo {
-    width: 21vw;
+    width: 22vw;
+    grid-area: grid-item_articulo;
     display: flex;
     flex-wrap: wrap;
     background-color: #ffffff;
     border-radius: 5%;
-    margin: 1vw;
+    margin-bottom: 3vh;
 }
 
 .grid-item__articulo:hover {
@@ -144,10 +143,11 @@ header div{
     background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 10px;
+    margin-top: 6vh;
     border-color: #3a86ff;
     padding-bottom: 50px;
     margin-right: 1vw;
-    ;
+    height: fit-content;
 }
 
 main {
@@ -297,11 +297,13 @@ footer h2 {
 }
 
 footer h3 {
+    font-size: 1.2rem;
     text-align: left;
     margin-bottom: 1vh;
 }
 
 footer p {
+    font-size: 0.6rem;
     text-align: center;
     padding-bottom: 1vh;
 }
@@ -330,7 +332,6 @@ footer li {
 
 .flex-item__web img {
     width: 2vw;
-    height: 4vh;
 }
 
 .flex-item__contact {
@@ -465,17 +466,26 @@ footer li {
     }
 
     .grid-container {
+        margin-top: 1vh;
+        margin-right: 1vw;
         display: grid;
         grid-template-columns: 75% 25%;
-        grid-template-rows: repeat(3, fr);
+        grid-template-rows: repeat(2, fr);
         grid-template-areas:
-            "grid-item grid-item__aside"
-            "grid-item ."
-            "grid-item ."
+            "grid-item__articulo grid-item__aside"
+            "grid-item__articulo ."
     }
 
-    .grid-item {
-        grid-area: grid-item;
+
+
+    .grid-item__articulo {
+        width: 22vw;
+        grid-area: grid-item_articulo;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        border-radius: 5%;
+        margin-bottom: 3vh;
     }
 
     .grid-item__articulo h5 {
@@ -488,9 +498,6 @@ footer li {
         font-size: 0.8rem;
     }
 
-    .grid-item__articulo {
-        width: 30vw;
-    }
 
     .grid-item .grid-item__articulo img {
         display: flex;
@@ -867,21 +874,26 @@ footer li {
     }
 
     .grid-container {
+        margin-top: 1vh;
+        margin-right: 1vw;
         display: grid;
         grid-template-columns: 75% 25%;
-        grid-template-rows: repeat(3, fr);
+        grid-template-rows: repeat(2, fr);
         grid-template-areas:
-            "grid-item grid-item__aside"
-            "grid-item ."
-            "grid-item ."
+            "grid-item__articulo grid-item__aside"
+            "grid-item__articulo ."
     }
 
-    .grid-item {
-        grid-area: grid-item;
-    }
+
 
     .grid-item__articulo {
-        width: 30vw;
+        width: 22vw;
+        grid-area: grid-item_articulo;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        border-radius: 5%;
+        margin-bottom: 3vh;
     }
 
     .grid-item .grid-item__articulo img {
@@ -1098,7 +1110,7 @@ footer li {
     .flex-container {
         display: flex;
         width: 100vw;
-        padding-left: 1%;
+
 
     }
 
@@ -1112,8 +1124,8 @@ footer li {
     }
 
     .flex-item__web img {
-        width: 2vw;
-        height: 4vh;
+        width: 3vw;
+
     }
 
     .flex-item__contact {
@@ -1665,17 +1677,17 @@ footer li {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 25% 50% 25%;
         grid-template-rows: repeat(3, fr);
         grid-template-areas:
-            "grid-item grid-item__aside"
-            "grid-item ."
-            "grid-item ."
+            ". grid-item__aside ."
+            "grid-item grid-item grid-item"
     }
 
     .grid-item {
         grid-area: grid-item;
     }
+
 
     .grid-item__articulo h5 {
 
@@ -1688,14 +1700,17 @@ footer li {
     }
 
     .grid-item__articulo {
-        width: 30vw;
+        width: 40vw;
+        display: flex;
+        flex-wrap: wrap;
+        ;
     }
 
     .grid-item .grid-item__articulo img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        height: 25vh;
+        width: 36vw;
     }
 
     img .card-img-top {
@@ -1703,15 +1718,14 @@ footer li {
     }
 
     .grid-item__aside {
-        display: flexbox;
+        width: 80%;
+        display: block;
         grid-area: grid-item__aside;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(247, 252, 153);
         text-align: center;
         border-radius: 10px;
         border-color: #3a86ff;
         padding-bottom: 2vh;
-        margin-right: 1vw;
-        ;
     }
 
     main img {
@@ -1888,6 +1902,7 @@ footer li {
     }
 
     footer h3 {
+        font-size: 0.8;
         margin-bottom: 1vh;
     }
 
@@ -1912,8 +1927,7 @@ footer li {
     }
 
     .flex-item__web img {
-        width: 2vw;
-        height: 4vh;
+        width: 3vw;
     }
 
     .flex-item__contact {
@@ -1949,6 +1963,7 @@ footer li {
     }
 
     footer p {
+        font-size: 0.5rem;
         text-align: center;
         padding-bottom: 1vh;
     }
@@ -1997,12 +2012,6 @@ footer li {
         background-color: rgba(128, 128, 128, 0.208);
         padding-right: 1vw;
         padding-left: 1vw;
-    }
-
-    form .d-flex {
-        display: block;
-        width: 100vw;
-        font-size: 0.6rem;
     }
 
     /*
@@ -2059,38 +2068,40 @@ footer li {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 25% 50% 25%;
         grid-template-rows: repeat(3, fr);
         grid-template-areas:
-            "grid-item grid-item__aside"
-            "grid-item ."
-            "grid-item ."
+            ". grid-item__aside ."
+            "grid-item grid-item grid-item"
     }
 
     .grid-item {
         grid-area: grid-item;
     }
 
-    .grid-item__articulo .card-title {
-        font-size: 0.7;
-        text-align: center;
-        padding: ;
+
+    .grid-item__articulo h5 {
+
+        font-size: 1rem;
         font-weight: bolder;
     }
 
     .grid-item__articulo p {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .grid-item__articulo {
-        width: 30vw;
+        width: 40vw;
+        display: flex;
+        flex-wrap: wrap;
+        ;
     }
 
     .grid-item .grid-item__articulo img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        width: 28vw;
+        width: 36vw;
     }
 
     img .card-img-top {
@@ -2098,15 +2109,14 @@ footer li {
     }
 
     .grid-item__aside {
-        display: flexbox;
+        width: 80%;
+        display: block;
         grid-area: grid-item__aside;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(247, 252, 153);
         text-align: center;
         border-radius: 10px;
         border-color: #3a86ff;
         padding-bottom: 2vh;
-        margin-right: 1vw;
-        ;
     }
 
     main img {
@@ -2211,7 +2221,6 @@ footer li {
         margin-bottom: 15px;
     }
 
-
     fieldset label {
         display: block;
         width: 25vw;
@@ -2226,13 +2235,6 @@ footer li {
 
     fieldset input {
         margin-left: 2vw;
-    }
-
-
-    div .boton {
-        display: block;
-        justify-content: center;
-        margin: auto;
     }
 
 
@@ -2291,10 +2293,71 @@ footer li {
     }
 
     footer h3 {
+        font-size: 0.8;
         margin-bottom: 1vh;
-        font-size: 0.9rem;
     }
 
+    footer p {
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        width: 100vw;
+        padding-left: 1%;
+
+    }
+
+    .flex-item__web {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        margin-right: 1vw;
+        text-align: end;
+        width: 30vw;
+    }
+
+    .flex-item__web img {
+        width: 3vw;
+    }
+
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+    }
+
+    .flex-item__contact li {
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
+    }
+
+    .flex-item__icono {
+        display: block;
+        width: 40vw;
+    }
+
+    .flex-item__icono img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .flex-item__redes {
+        width: fit-content;
+        margin-bottom: 1vh
+    }
+
+    footer p {
+        font-size: 0.5rem;
+        text-align: center;
+        padding-bottom: 1vh;
+    }
 
 
     .flex-container {
@@ -2456,17 +2519,17 @@ footer li {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 25% 50% 25%;
         grid-template-rows: repeat(3, fr);
         grid-template-areas:
-            "grid-item grid-item__aside"
-            "grid-item ."
-            "grid-item ."
+            ". grid-item__aside ."
+            "grid-item grid-item grid-item"
     }
 
     .grid-item {
         grid-area: grid-item;
     }
+
 
     .grid-item__articulo h5 {
 
@@ -2479,14 +2542,17 @@ footer li {
     }
 
     .grid-item__articulo {
-        width: 30vw;
+        width: 40vw;
+        display: flex;
+        flex-wrap: wrap;
+        ;
     }
 
     .grid-item .grid-item__articulo img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        height: 25vh;
+        width: 36vw;
     }
 
     img .card-img-top {
@@ -2494,27 +2560,19 @@ footer li {
     }
 
     .grid-item__aside {
-        display: flexbox;
+        width: 80%;
+        display: block;
         grid-area: grid-item__aside;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(247, 252, 153);
         text-align: center;
         border-radius: 10px;
         border-color: #3a86ff;
         padding-bottom: 2vh;
-        margin-right: 1vw;
-        ;
     }
 
     main img {
         height: 100vh;
-    }
-
-    main .card-title {
-        font-size: 1rem;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
+        ;
     }
 
     main {
@@ -2535,8 +2593,16 @@ footer li {
         list-style: none;
     }
 
-    main h4 {
+    main .card-title {
         font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main h4 {
+        font-size: 2rem;
         color: rgb(0, 0, 0);
         padding-bottom: 1vh;
         border: 4px solid black;
@@ -2578,7 +2644,6 @@ footer li {
 
     aside ul {
         text-align: start;
-        font-size: 0.5rem;
         margin-left: 0.2vw;
     }
 
@@ -2588,12 +2653,6 @@ footer li {
 
     aside p {
         padding-top: 2vh;
-    }
-
-    #location {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
     }
 
     .form-contact-compra {
@@ -2606,6 +2665,12 @@ footer li {
         font-size: 2.5rem;
     }
 
+
+    #location {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
 
     fieldset label {
         display: block;
@@ -2623,18 +2688,6 @@ footer li {
         margin-left: 2vw;
     }
 
-    .flex-item__contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 29vw;
-    }
-
-    div .boton {
-        display: block;
-        justify-content: center;
-        margin: auto;
-    }
 
 
     .grid-container__nosotros {
@@ -2691,13 +2744,12 @@ footer li {
     }
 
     footer h3 {
+        font-size: 0.8;
         margin-bottom: 1vh;
-        font-size: 0.9rem;
     }
 
     footer p {
         text-align: center;
-        font-size: 0.6rem;
     }
 
     .flex-container {
@@ -2717,8 +2769,7 @@ footer li {
     }
 
     .flex-item__web img {
-        width: 2vw;
-        height: 4vh;
+        width: 3vw;
     }
 
     .flex-item__contact {
@@ -2754,13 +2805,83 @@ footer li {
     }
 
     footer p {
+        font-size: 0.5rem;
         text-align: center;
         padding-bottom: 1vh;
+    }
+
+
+
+    .flex-container {
+        display: flex;
+        width: 100vw;
+        padding-left: 1%;
+
+    }
+
+    .flex-item__web {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        margin-right: 1vw;
+        text-align: end;
+        width: 30vw;
+    }
+
+    .flex-item__web img {
+        width: 2vw;
+        height: 4vh;
+    }
+
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29vw;
+        margin-right: 2vw;
+    }
+
+    .flex-item__contact li {
+        display: flex;
+        text-align: flex-start;
+        justify-content: start;
+
+    }
+
+    .flex-item__icono {
+        display: block;
+        width: 40vw;
+    }
+
+    .flex-item__icono img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .flex-item__redes {
+        width: fit-content;
+        margin-bottom: 1vh
+    }
+
+    footer p {
+        text-align: center;
+        padding-bottom: 1vh;
+        font-size: 0.6rem;
     }
 }
 
 
+
 a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
     color: black;
     text-decoration: none;
 }
